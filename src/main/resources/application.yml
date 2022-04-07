@@ -1,0 +1,39 @@
+server:
+  port: 1005
+
+spring:
+  redis:
+    host: 127.0.0.1
+    password:
+    port: 6379
+    timeout: 3000
+
+
+# 配置swagger
+swagger:
+  basePackage: com.menu
+  title: 菜谱大全
+  description: 菜谱大全项目
+  version: V1.0
+  basic:
+    enable: true
+    username: tian
+    password: tian
+
+# 日志配置
+#logging:
+#  file:
+#    path: /root/java/git/HistoryElasticSearch/HistoryElasticSearch.log
+#  level:
+#    com.suzicny: info
+#    org.springframework: info
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+
+
+jd:
+  appkey: b47aa8c582a96e24b10f0f8973ad4692
+
